@@ -31,21 +31,93 @@ section#login{
     transform: translate(-50%, -50%);
     position: absolute;
     background-color: white;
-    width: 250px;
-    height: 500px;
+    width: 280px;
+    height: 520px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.573);
+    transition: width 0.2s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
     display: block;
     background: #5f2c82 url(../imagens/pexels-david-underland-5868879.jpg) no-repeat center;
     background-size: cover;
-    height: 200px;
+    height: 150px;
 }
 
 section#login > div#formulario{
     display: block;
-    padding: 10px;
+    padding: 15px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #5f2c82;
+}
+div#formulario > p{
+    font-size:1em;
+    margin-bottom: 10px;
+}
+form > input[type="submit"]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    margin-top:5px;
+}
+form > input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #5f2c82;
+}
+form > a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    font: 1em;
+    background-color: #2ecec9;
+    color: white;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+form > a:hover{
+    cursor: pointer;
+    background-color: #5f2c82;
+}
+.campo{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    background-color: #602c82e9;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #49a09d;
+    padding-left: 10px;
+    font-size: 1em;
+}
+label{
+    display: none;
+}
+.campo .material-symbols-outlined{
+    float: left;
+    font-size: 1.7em;
+    width: 40px;
+    margin: 0px;
+    padding: 5px;
+}
+input[type="password"], input[type="email"]:focus-within{
+    background-color: rgb(234, 233, 231);
 }
